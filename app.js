@@ -16,7 +16,7 @@ var units = "&units=metric";
   function updateDOM(data){
     var city = data.list[0].name;
     var temp = Math.round(data.list[0].main.temp);
-    var desc = data.list[0].weather.description;
+    var desc = data.list[0].weather[0].description; //Change 
     var icon = data.list[0].weather[0].icon;
 
 
